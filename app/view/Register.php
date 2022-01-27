@@ -19,7 +19,7 @@
             <?php echo $data['loginError']; ?>
         </span>
         <label for="email">E-mail:</label>
-        <input class="input" type="text"  placeholder="wprowadź swojego maila"  name="email"/>
+        <input class="input" type="text"  placeholder="wprowadź mail"  name="email"/>
         <span class="invalidFeedback">
             <?php echo $data['emailError']; ?>
         </span>
@@ -33,7 +33,7 @@
         <span class="invalidFeedback">
             <?php echo $data['confirmPasswordError']; ?>
         </span>
-        <button class="submit-button" type="submit">Wyslij</button>
+        <button class="submit-button" type="submit">OK</button>
     </form>
     </div>
 <?php get_footer(); ?>

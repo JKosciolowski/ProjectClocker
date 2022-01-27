@@ -10,7 +10,7 @@ if ((!isset($_POST['uname'])) || (!isset($_POST['pword']))){
 $login = $_POST["uname"];
 $password = $_POST["pword"];
 
-if (($login == "hubert" and $password == "123") or ($login == "hubert1" and $password == "1234")){
+if (($login == "lukasz" and $password == "123") or ($login == "lukasz1" and $password == "1234")){
 
     $_SESSION['username'] = $login;
     $_SESSION['password'] = $password;

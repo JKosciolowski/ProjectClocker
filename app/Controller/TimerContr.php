@@ -19,7 +19,7 @@ class TimerController extends Controller
                 $this->db->bind(':finished', 0);
                 $this->db->execute();
             } else {
-                $this->db->query('UPDATE project SET finished = 1, end_date = :end_date WHERE user_id = :user_id AND finished = 0');
+                $this->db->query('UPDATE projects SET finished = 1, end_date = :end_date WHERE user_id = :user_id AND finished = 0');
                 $this->db->bind(':user_id', (int)$_SESSION['user_id']);
                 $this->db->bind(':end_date', date("Y-m-d H:i:s"));
                 $this->db->execute();

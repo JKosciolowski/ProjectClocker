@@ -7,7 +7,7 @@
         <input type="hidden" id="current_project_id" value="<?php echo isset($data['project_in_progress']['projectId']) ? $data['project_in_progress']['start_date'] : 0; ?>" />
         <input type="hidden" id="project_name" value="<?php echo isset($data['project_in_progress']['project_name']) ?? $data['project_in_progress']['project_name'] : 0; ?>" />
     </div>
-    <input name="task_name" id="project_name_input" type="text" placeholder="Wprowadź nazwę projektu"/>
+    <input name="project_name" id="project_name_input" type="text" placeholder="Wprowadź nazwę projektu"/>
     <button counting="0" class="timer-button">Start</button>
     <div class="timer_history">
         <?php foreach ($data['archived_projects'] as $archived_project) {
